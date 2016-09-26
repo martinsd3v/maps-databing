@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="ViewMapBinding"></data>
+
+    <RelativeLayout
+        android:id="@+id/activity_view_maps"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="marcelo.trabalhandocommaps.ViewMapsActivity"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:id="@+id/recebeFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteY="140dp"
+            tools:layout_editor_absoluteX="31dp"
+            android:layout_weight="0.56">
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/map_marker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="48dp"
+            android:src="@drawable/local"/>
+
+        <TextView
+            android:layout_above="@id/recebeFragment"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:text="Endereço"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/enderecoId"
+            android:layout_weight="0.56"
+            android:background="#ffffff"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:elevation="4dp"
+            android:textColor="#333333"/>
+    </RelativeLayout>
+</layout>
